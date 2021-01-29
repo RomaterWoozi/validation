@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/API/login")
+@RequestMapping("/API/user")
 public class LoginController {
     @Autowired
     private UserService userService;
@@ -27,5 +27,7 @@ public class LoginController {
         System.out.println("LoginController login");
         return userService.login(user);
     }
+
+
 
 }

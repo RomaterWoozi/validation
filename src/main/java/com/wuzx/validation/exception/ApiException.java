@@ -22,6 +22,11 @@ public class ApiException extends RuntimeException {
         this(1001, msg);
     }
 
+    /**
+    * @author WuZX
+    * 时间  2021/1/29 14:28
+    *  自定义异常信息
+    */
     public ApiException(int code, String msg) {
         super(msg);
         this.code = code;
